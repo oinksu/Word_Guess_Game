@@ -134,7 +134,7 @@ main {
     border-style: dashed;
     border-color:#66e68c;
     border-width: .5em;
-    margin: 37px 0 124px 0;
+    margin: 25px 9px 25px 0;
 }
 
 .right{
@@ -142,7 +142,7 @@ main {
     width: 50%;
     height: 50%;
     background-color: rgba(145, 129, 129, 0.75);
-    z-index: 99;
+    
     
     border-style: dashed;
     border-color:#66e68c;
