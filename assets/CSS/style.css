@@ -33,7 +33,7 @@ h3{
 
 h4 {
     font-family: 'Lucida Console', monospace;
-    font-size: 2em;
+    font-size: 3em;
     color: #f80743;
 }
 
@@ -41,42 +41,46 @@ p {
     font-family: 'Lucida Console', monospace;
     font-size: 1.75em;
     text-align: center;
-    margin-top: -55px;
+    
 } 
 
 #guessedLetters {
-    color: #767F82;
+    color: #66e68c;
 }
 
-#pressPlay {
-    color: #002d3c;
-    margin-top: 0;
-    margin-bottom: -40px;
-}
+
 
 #answerWord {
     letter-spacing: .25em;
     margin-top: 0;
-    color: #d0833b;
+    color: #66e68c;
 }
 
 main {
-    width: 80%;
+    width: 960px;
     margin: 0 auto;
 }
 
+/* 
 .container {
-    display: flex;
-    background-color: rgba(255, 255, 255, 0.7);
+    
+    height: 80%;
+    background-color: rgba(145, 129, 129, 0.75);
+} 
+
+*/
+
+#picResult {
+    width: 50%;
+    height: 50%;
 }
 
-.flexColumn {
-    flex-direction: column;
-}
+
+
 
 .main-header {
     width: 40%;
-    margin:20px 0% 5% 30%;
+    margin: 0;
     background-color: #f80743;
     border-style: dashed;
     border-color:#66e68c;
@@ -85,30 +89,43 @@ main {
 }
 
 .middle {
-    flex: 1;
-    order: 2;
-    padding: 20px;
-    border-left: 1px solid #777777;
-    border-right: 1px solid #777777;
+    background-color: rgba(145, 129, 129, 0.75);
+    float: left;
+    height: 800px;
+    margin: 20px 0px 20px 0px;
+    padding: 0px;
+    border-style: dashed;
+    border-color:#66e68c;
+    border-width: .5em;
 }
 
-#giphy-embed {
-    width: 100%;
-    height: 100%;
-}
+
+
 
 .side {
+    background-color: rgba(145, 129, 129, 0.75);
+    float: left;
     width: 20%;
     padding: 20px;
+    border-style: dashed;
+    border-color:#66e68c;
+    border-width: .5em;
 }
+
 .left {
-    order: 1;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    background-color: rgba(145, 129, 129, 0.75);
+    float: left;
+    border-style: dashed;
+    border-color:#66e68c;
+    border-width: .5em;
 }
 
 .right{
-    order: 3;
-    overflow-wrap: break-word;
+    background-color: rgba(145, 129, 129, 0.75);
+    z-index: 99;
+    float: left;
+    border-style: dashed;
+    border-color:#66e68c;
+    border-width: .5em;
+    
 }
