@@ -3,7 +3,8 @@
   }
 
 body {
-   
+
+    width: 960px;
     background-image: url("../images/eliot_tupac.jpg");
 }
 h1 {
@@ -97,7 +98,7 @@ main {
     background-color: rgba(145, 129, 129, 0.75);
     float: left;
     height: 800px;
-    margin: 35px 50px 27px -252px;
+    margin: 49px 79px 27px 26pxx;
     padding: 0px;
     border-style: dashed;
     border-color:#66e68c;
