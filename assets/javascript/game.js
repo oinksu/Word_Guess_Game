@@ -1,5 +1,5 @@
 
-var words = ["CHACALON", "GRUPOCELESTE", "JUANECO", "DESTELLOS", "DIABLOSROJOS", "HIJOSDELSOL", "LOSMIRLOS", "RIBERENOS", "SHAPIS", "WEMBLERSDEIQUITOS","PINTURAROJA"];
+var words = ["CHACALON", "GRUPOCELESTE", "JUANECO", "DESTELLOS", "DIABLOSROJOS", "HIJOSDELSOL", "LOSMIRLOS", "RIBERENOS", "SHAPIS", "WEMBLERSDEIQUITOS", "PINTURAROJA"];
 
 var maxGuess = 8; 
 var Letters = []; 
@@ -35,7 +35,9 @@ function setup() {
 };
 
 
-function updateScreen() {
+function updateScreen() 
+
+{
     document.getElementById("numWins").innerText = numWins;
     document.getElementById("numLosses").innerText = numLosses;
     document.getElementById("numGuesses").innerText = numGuessesRemaining;
