@@ -93,7 +93,7 @@ main {
     
     max-width: 960%;
     width: 100%;
-    margin: 10px 0 10px 0;
+    margin: 15px 0 15px 0;
     background-color: #f80743;
     border-style: dashed;
     border-color:#66e68c;
@@ -126,6 +126,7 @@ main {
     border-style: dashed;
     border-color:#66e68c;
     border-width: .5em;
+    align-content: center;
 }
 
 .left {
@@ -137,6 +138,7 @@ main {
     border-color:#66e68c;
     border-width: .5em;
     margin: 25px 9px 25px 0;
+    align-content: center;
 }
 
 .right{
@@ -149,5 +151,5 @@ main {
     border-style: dashed;
     border-color:#66e68c;
     border-width: .5em;
-    
+    align-content: center;
 }
