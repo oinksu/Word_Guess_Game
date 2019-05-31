@@ -155,11 +155,3 @@ setup();
 updateScreen();
 
 console.log(ansWord);
-
-
-
-
-
-
-
-
