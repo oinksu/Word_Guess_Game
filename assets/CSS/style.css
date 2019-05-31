@@ -118,7 +118,7 @@ main {
 
 
 .side {
-    align-content: center;
+    
     background-color: rgba(145, 129, 129, 0.75);
     
     width: 20%;
@@ -126,7 +126,6 @@ main {
     border-style: dashed;
     border-color:#66e68c;
     border-width: .5em;
-    align-content: center;
 }
 
 .left {
@@ -152,4 +151,37 @@ main {
     border-color:#66e68c;
     border-width: .5em;
     align-content: center;
+}
+
+@media screen and (max-width: 768px) {
+
+    body{
+      background-color: #333
+    }
+    
+    
+    .container{
+      width: 600px;
+      margin: 0px 0px;
+    } 
+
+    .left{
+        width: 600px;
+    }
+
+    .right{
+        width: 600px;
+    }
+
+    .middle{
+        width: 600px;
+    }
+
+    .side{
+        width: 600px;
+    }
+
+    .main-header{
+        width: 600px;
+    }
 }
