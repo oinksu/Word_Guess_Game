@@ -70,8 +70,10 @@ main {
 
 
 .container {
-    margin: 0%;
-    height: 80%;
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+    clear: both;
     background-color: rgba(145, 129, 129, 0.75);
 } 
 
@@ -101,7 +103,8 @@ main {
     align-content: center;
     background-color: rgba(145, 129, 129, 0.75);
     float: left;
-    height: 800px;
+    height: 80%;
+    width: auto;
     margin: 49px 79px 27px 26pxx;
     padding: 0px;
     border-style: dashed;
