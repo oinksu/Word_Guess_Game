@@ -128,7 +128,7 @@ function isLoser() {
         numLosses++;
         isFinished = true;
        
-        document.getElementById("picResult").src = "https://youtu.be/M5QGkOGZubQ";
+        document.getElementById("picResult").src = "assets/images/chicha_banner.jpg";
         document.getElementById("numLosses").style.color = "#e12d2e";
     }
 
