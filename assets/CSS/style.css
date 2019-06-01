@@ -114,8 +114,9 @@ main {
     border-width: .5em;
 }
 
-
-
+#numGuesses {
+    color: #66e68c;
+}
 
 .side {
     

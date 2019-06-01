@@ -59,6 +59,7 @@ function updateScreen()
 };
 
 //guessed letter conditional decrease not really working how I wanted it warning color 
+//fixed warning color from black to white
 function check(letter) {
    
     if (guessedLetters.indexOf(letter) === -1) {
