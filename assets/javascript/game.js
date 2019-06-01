@@ -1,40 +1,52 @@
-
+//name of bands
 var words = ["CHACALON", "GRUPOCELESTE", "JUANECO", "DESTELLOS", "DIABLOSROJOS", "HIJOSDELSOL", "LOSMIRLOS", "RIBERENOS", "SHAPIS", "WEMBLERSDEIQUITOS", "PINTURAROJA"];
 
+//maximum guesses allowed
 var maxGuess = 8; 
-var Letters = []; 
+
+// array composed by randomizing the words array length value and making the random value whole
 var ansWordArr = []; 
+
+//initial value of game wins
 var numWins = 0; 
+//initial value of game losses
 var numLosses = 0;
+//initial value of Guesses allowed to the player
 var numGuessesRemaining = 0;
+
 var ansWord;
 var isFinished = false; 
 
 
 function setup() {
 
+    //non decimal random pick of the word
     ansWord = words[Math.floor(Math.random() * words.length)];
 
     ansWordArr = [];
 
- 
+//loop to print mask of dashes represented by "ansWord" letter length count 
     for (var i = 0; i < ansWord.length; i++) {
         ansWordArr[i] = "_";
     }
 
+//setting guess capacity 
     numGuessesRemaining = maxGuess;
+
+//value pushe by innertext element of paragraph ID    
     guessedLetters = [];
 
-    
+//placeholder Image set due to broken image link box have not solve issue to a CUMBIA label is set after first game    
     document.getElementById("picResult").src = "assets/images/cumbia.png";
    
     document.getElementById("numGuesses").style.color = "";
 
-    
+   //calls functions to update values letters and styles  
     updateScreen();
 };
 
 
+//dynamic value changes in the screen by class and ID elements 
 function updateScreen() 
 
 {
@@ -46,7 +58,7 @@ function updateScreen()
 
 };
 
-
+//guessed letter conditional decrease not really working how I wanted it warning color 
 function check(letter) {
    
     if (guessedLetters.indexOf(letter) === -1) {
@@ -70,7 +82,7 @@ function check(letter) {
 
 }; 
 
-
+//winnning conditions
 function isWinner() {
     
     if (ansWordArr.indexOf("_") === -1) {
@@ -123,7 +135,7 @@ function isWinner() {
             
     }
 };
-
+//loosing conditions
 function isLoser() {
     
     if(numGuessesRemaining <= 0) {
@@ -136,7 +148,7 @@ function isLoser() {
 
 };
 
-
+//Key release condition for end game
 document.onkeyup = function(event) {
    
     if (isFinished) {
@@ -144,6 +156,7 @@ document.onkeyup = function(event) {
         isFinished = false;
     } else {
         
+        //convert unicode outside range to uppercase 
         if(event.keyCode >= 65 && event.keyCode <= 90) {
             check(event.key.toUpperCase()); 
             updateScreen();
@@ -153,6 +166,7 @@ document.onkeyup = function(event) {
     }
 };
 
+//call funtion and print answer word to console
 setup();
 updateScreen();
 
